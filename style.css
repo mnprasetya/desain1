@@ -1,0 +1,206 @@
+
+/* custom mp */
+
+html{
+  margin:0;
+padding:0;
+}
+body{
+  
+  color: #333333;
+  background: #eeeeee;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  
+  
+}
+
+.font-letter{
+  color: #7a9577;
+  font-family: "Sacramento", Sans-serif;
+}
+
+#head{
+  background-image: url(https://galipatstory.com/wp-content/uploads/2020/12/ORNAMEN-BG-01.png);
+  background-repeat: no-repeat no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  height: 100%;
+
+  /* opacity: .5; */
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.our-wedding-icon{
+  max-width: 8% !important;
+}
+.our-wedding{
+  
+  font-family: Raleway,sans-serif;
+  font-size: 33px;
+  font-weight: 500;
+  letter-spacing: .6px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.quotes{
+  box-sizing: border-box;
+  color: #7a9577;
+  font-family: "Open Sans",sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+#pengantin{
+  box-sizing: border-box;
+  color: #7a7a7a;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+  line-height: 1.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.putra,.putri{
+  color: #7a9577;
+  font-family: Sacramento,sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.putra-dari,.putri-dari{
+  /* box-sizing: border-box; */
+  font-weight: 700;
+  
+}
+
+.bapak,.ibu{
+  color: #7a7a7a;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+  line-height: 2.1em;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.couple{
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.image{
+  border-radius: 0;
+           border-style: none;
+           box-shadow: none;
+           box-sizing: border-box;
+           display: inline-block;
+           height: auto;
+           max-width: 80%;
+           vertical-align: middle;
+}
+
+.play{
+  background-color: #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  fill: #fff;
+  font-size: 25px;
+  line-height: 1;
+  padding: .5em;
+  text-align: center;
+  transition-delay: 0s;
+  transition-duration: .3s;
+  transition-property: all;
+  transition-timing-function: ease;
+
+  
+}
+.play:hover {
+  background-color: transparent;
+}
+
+.bg-waktu{
+  background-image: url(https://galipatstory.com/wp-content/uploads/2021/05/Faisal-Elin-1.jpeg);
+  /* background-position: -488px 0; */
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100%;
+  /* left: 0; */
+  opacity: .33;
+  /* position: absolute; */
+  /* top: 0; */
+  transition-delay: 0s,0s,0s;
+  transition-duration: .3s,.3s,.3s;
+  transition-property: background,border-radius,opacity;
+  transition-timing-function: ease,ease,ease;
+  width: 100%;
+  
+}
+.save-the-date{
+  box-sizing: border-box;
+  color: #121f38;
+  font-family: "Open Sans",sans-serif;
+  font-size: 33px;
+  font-weight: 500;
+  letter-spacing: 11px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.undangan-pernikahan{
+  box-sizing: border-box;
+  color: #7a9577;
+  font-family: Sacramento,sans-serif;
+  font-size: 63px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 576px) { 
+
+  .our-wedding-icon{
+    max-width: 25% !important;
+  }
+  .image{
+    max-width: 100%;
+  }
+
+  .quotes{
+   
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: -.2px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+  }
+
+ }
