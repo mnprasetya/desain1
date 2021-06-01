@@ -353,7 +353,6 @@ body{
   border-radius: 7px;
   box-sizing: border-box;
   display: flex;
-  margin: 15px;
   padding: 40px 35px;
   position: relative;
   transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
@@ -362,6 +361,13 @@ body{
 
 .text-mp{
   color: #7a9577;
+}
+
+.box-momen{
+  position: relative;
+  max-width: 800px !important;
+  margin: auto;
+  padding-bottom: 35px;
 }
 
 .text-momen-judul{
@@ -390,7 +396,7 @@ body{
   margin: 0;
   padding: 0;
 }
-.text-momen-pukul{
+.text-momen-jam{
   box-sizing: border-box;
   color: #121f38;
   font-family: Raleway,sans-serif;

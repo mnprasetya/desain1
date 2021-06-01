@@ -19,7 +19,8 @@
 
   <!-- bootstrap5   -->
   <link rel="stylesheet" href="css/bootstrap.css">
-
+  <link rel="stylesheet" href="css/anim.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- css -->
   <link rel="stylesheet" href="style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -29,20 +30,23 @@
 <body>
 
   <!-- slide 1  -->
-  <section id="head" class="py-lg-2 position-relative">
+  <section id="head" class="py-lg-2 position-relative mt-xl-5 mt-lg-5 mt-md-3 mt-sm-0">
     <div class="container m-auto my-5 p-3">
       <!-- pembukaan -->
-      <div class="row text-center">
+      <div class="row text-center ">
         <!-- logo -->
-        <div class="col-12">
+        <div class="col-12" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="500"
+          data-aos-duration="300">
           <img class="our-wedding-icon" src="https://galipatstory.com/wp-content/uploads/2020/12/FLORAL-2.png" alt="">
         </div>
         <!-- our wedding -->
-        <div class="col-12 p-3">
+        <div class="col-12 p-3" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="700"
+          data-aos-duration="500">
           <span class="our-wedding">OUR WEDDING</span>
         </div>
         <!-- quotes -->
-        <div class="col-12">
+        <div class="col-12" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="900"
+          data-aos-duration="700">
           <div class="quotes">Maha suci Allah SWT yang menciptakan makhluk-Nya berpasang - pasangan</div>
         </div>
       </div>
@@ -50,7 +54,7 @@
       <!-- foto utama -->
       <div class="row text-center d-flex align-items-center flex-sm-row mt-sm-5 m-auto">
         <!-- Pria -->
-        <div id="pengantin" class="col-md-4 col-sm-12 col-xl-4">
+        <div id="pengantin" class="col-md-4 col-sm-12 col-xl-4 " data-aos="zoom-in-right" data-aos-delay="300">
           <div class="d-flex flex-column">
             <div class="putra">Median Prasetya</div>
             <div class="putra-dari mt-4">
@@ -59,10 +63,10 @@
                   Putra dari
                 </span>
                 <span class="bapak">
-                  Bapak Dedi Junaedi
+                  Bapak *********
                 </span>
                 <span class="ibu">
-                  & Ibu Maryani
+                  & Ibu *********
                 </span>
               </article>
             </div>
@@ -71,24 +75,24 @@
 
         <!-- foto couple -->
         <div class="col-md-4 col-sm-12 col-xl-4">
-          <div class="couple ">
+          <div class="couple " data-aos="zoom-in" data-aos-delay="400">
             <img class="image" src="https://galipatstory.com/wp-content/uploads/2021/05/ertr.png" alt="">
           </div>
         </div>
 
-        <div id="pengantin" class="col-md-4 col-sm-12 col-xl-4">
+        <div id="pengantin" class="col-md-4 col-sm-12 col-xl-4" data-aos="zoom-in-left" data-aos-delay="300">
           <div class="d-flex flex-column">
-            <div class="putri">Median Prasetya</div>
+            <div class="putri">Siti Khoirunisa A,md.Kep</div>
             <div class="putri-dari mt-4">
               <article class="d-flex flex-column">
                 <span class="putri-dari">
                   Putri dari
                 </span>
                 <span class="bapak">
-                  Bapak Dedi Junaedi
+                  Bapak *********
                 </span>
                 <span class="ibu">
-                  & Ibu Maryani
+                  & Ibu *********
                 </span>
               </article>
             </div>
@@ -108,8 +112,8 @@
 
         <div class="py-5">
           <div class="row mb-5">
-            <div class="col-12 judul">SAVE THE DATE</div>
-            <div class="col-12 letter mt-lg-4">Undangan Pernikahan</div>
+            <div class="col-12 judul" data-aos="zoom-in-right" data-aos-delay="350">SAVE THE DATE</div>
+            <div class="col-12 letter mt-lg-4" data-aos="zoom-in-right" data-aos-delay="200">Undangan Pernikahan</div>
             <div class="col-12 pb-2" style="box-sizing: border-box;
             line-height: 0;
             padding-bottom: 15px;
@@ -129,32 +133,33 @@
 
           <!-- jam -->
           <div class="row box-waktu">
-            <div class="col-3">
+            <div class="col-3" data-aos="flip-right" data-aos-delay="400">
               <div class="row waktu-count">
                 <div class="col-12 waktu">0</div>
                 <div class="col-12 text-waktu ">Hari</div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3" data-aos="flip-down" data-aos-delay="500" data-aos-duration="700">
               <div class="row waktu-count">
                 <div class="col-12 waktu">0</div>
                 <div class="col-12 text-waktu">Jam</div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3" data-aos="flip-up" data-aos-delay="600">
               <div class="row waktu-count">
                 <div class="col-12 waktu">0</div>
                 <div class="col-12 text-waktu">Menit</div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3" data-aos="flip-left" data-aos-delay="700" data-aos-duration="500">
               <div class="row waktu-count">
                 <div class="col-12 waktu">0</div>
                 <div class="col-12 text-waktu">Detik</div>
               </div>
             </div>
 
-            <div class="col-12 mt-5 d-flex justify-content-center">
+            <div class="col-12 mt-5 d-flex justify-content-center" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
               <div class="row">
                 <a class="remember" href="#">
                   <span class="text-remember">
@@ -166,7 +171,7 @@
               </div>
             </div>
             <div class="col-12">
-              <div class="text">
+              <div class="text" data-aos="zoom-in" data-aos-delay="200">
                 Kami akan menikah, <br> dan kami ingin Anda menjadi bagian dari <br> hari istimewa kami!
               </div>
             </div>
@@ -176,26 +181,31 @@
       </div>
   </section>
 
-  <!-- slide 3 -->
+  <!-- slide 3 Resepsi Akad-->
   <section id="momen" class="py-lg-5 position-relative">
-    <div class="container m-auto my-5 p-3">
+    <div class="container my-5 p-3">
       <!-- pembukaan -->
       <div class="row text-center">
         <!-- logo -->
-        <div class="col-12">
+        <div class="col-12" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-delay="400"
+          data-aos-duration="500">
           <img class="our-wedding-icon" src="https://galipatstory.com/wp-content/uploads/2020/12/FLORAL-2.png" alt="">
         </div>
         <!-- our wedding -->
         <div class="col-12 p-3">
-          <p class="invitation-text">BERGABUNGLAH<br>DI MOMENT SPESIAL KAMI</br>
-            <h2 class="letter">Waktu & Tempat</h2>
+          <p class="invitation-text" data-aos="zoom-out" data-aos-anchor-placement="zoom-in" data-aos-delay="400"
+            data-aos-duration="600">BERGABUNGLAH<br data-aos="zoom-out" data-aos-delay="400" data-aos-duration="600">DI
+            MOMENT SPESIAL
+            KAMI</br>
+            <h2 class="letter" data-aos="zoom-out" data-aos-delay="500" data-aos-duration="700">Waktu & Tempat</h2>
         </div>
 
       </div>
 
-      <!-- foto utama -->
-      <div class="row text-center d-flex align-items-center flex-sm-row mt-sm-5 m-auto">
-        <div class="col-6">
+
+      <div class="row text-center d-flex align-items-center flex-sm-row mt-sm-5 m-auto box-momen">
+        <!-- akad -->
+        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 mt-sm-5" data-aos="flip-left">
           <div class="card momen-card">
             <div class="p-5">
               <div class="row">
@@ -203,22 +213,58 @@
                   <i class="fa fa-calendar fa-3x text-mp"></i>
                 </div>
                 <div class="col-12 pt-4">
-                  <p class="text-momen-judul">Akad Nikah</p>
-                  <p class="text-momen-tanggal">Sabtu, 31 januari 2000</p>
+                  <p class="text-momen-judul" data-aos="zoom-in" data-aos-delay="200">Akad Nikah</p>
+                  <p class="text-momen-tanggal" data-aos="zoom-in" data-aos-delay="300">Sabtu, 31 januari 2000</p>
                 </div>
 
                 <div class="col-12 py-5">
-                  <hr>
+                  <hr data-aos="zoom-in" data-aos-delay="400">
                 </div>
 
-                <div class="col-12">
-                  <b class="text-momen-pukul">Pukul</b>
-                  <p class="text-momen-jam">00:00 WIB</p>
+                <div class="col-12 py-3">
+                  <b class="text-momen-pukul" data-aos="zoom-in" data-aos-delay="500">Pukul</b>
+                  <p class="text-momen-jam" data-aos="zoom-in" data-aos-delay="600">00:00 WIB</p>
+                </div>
+                <div class="col-12 pt-3">
+                  <b class="text-momen-pukul" data-aos="zoom-in" data-aos-delay="700">Lokasi</b>
+                  <p class="text-momen-jam" data-aos="zoom-in" data-aos-delay="800">Gedung Serba Guna</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 mt-sm-5" data-aos="flip-right">
+          <div class="card momen-card">
+            <div class="p-5">
+              <div class="row">
+                <div class="col-12">
+                  <i class="fa fa-calendar fa-3x text-mp"></i>
+                </div>
+                <div class="col-12 pt-4">
+                  <p class="text-momen-judul" data-aos="zoom-in" data-aos-delay="200">Resepsi</p>
+                  <p class="text-momen-tanggal" data-aos="zoom-in" data-aos-delay="300">Sabtu, 31 januari 2000</p>
+                </div>
+
+                <div class="col-12 py-5">
+                  <hr data-aos="zoom-in" data-aos-delay="400">
+                </div>
+
+                <div class="col-12 py-3">
+                  <b class="text-momen-pukul" data-aos="zoom-in" data-aos-delay="500">Pukul</b>
+                  <p class="text-momen-jam" data-aos="zoom-in" data-aos-delay="600">00:00 WIB</p>
+                </div>
+                <div class="col-12 pt-3">
+                  <b class="text-momen-pukul" data-aos="zoom-in" data-aos-delay="700">Lokasi</b>
+                  <p class="text-momen-jam" data-aos="zoom-in" data-aos-delay="800">Gedung Serba Guna</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
 
       </div>
 
@@ -233,6 +279,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
