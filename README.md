@@ -1,4 +1,4 @@
 Learn FrontEnd# desain1
-wedding template 1, redesign~
+wedding template, redesign~
 
 Demo : https://mnprasetya.github.io/desain1
