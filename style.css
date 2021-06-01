@@ -326,7 +326,7 @@ body{
   box-sizing: border-box;
   height: 100%;
   left: 0;
-  opacity: .5;
+  /* opacity: .5; */
   position: absolute;
   top: 0;
   transition-delay: 0s,0s,0s;
@@ -335,8 +335,72 @@ body{
   transition-timing-function: ease,ease,ease;
   width: 100%;
 }
+.invitation-text{
+  box-sizing: border-box;
+  color: #121f38;
+  font-family: Raleway,sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  letter-spacing: .6px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
 
+.momen-card{
+  background-color: #fff;
+  border-radius: 7px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 15px;
+  padding: 40px 35px;
+  position: relative;
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+  width: 100%;
+}
 
+.text-mp{
+  color: #7a9577;
+}
+
+.text-momen-judul{
+  box-sizing: border-box;
+  color: #7a9577;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.text-momen-tanggal{
+  box-sizing: border-box;
+  color: #7a7a7a;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: var(--e-global-typography-text-font-weight);
+  margin: 0;
+}
+.text-momen-pukul{
+  box-sizing: border-box;
+  color: #121f38;
+  font-family: Raleway,sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -.5px;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+.text-momen-pukul{
+  box-sizing: border-box;
+  color: #121f38;
+  font-family: Raleway,sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -.5px;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
+}
 @media (max-width: 576px) { 
 
   .our-wedding-icon{
