@@ -325,10 +325,14 @@ body{
   background-size: contain;
   box-sizing: border-box;
   height: 100%;
-
-  /* opacity: .5; */
+  left: 0;
+  opacity: .5;
   position: absolute;
   top: 0;
+  transition-delay: 0s,0s,0s;
+  transition-duration: .3s,.3s,.3s;
+  transition-property: background,border-radius,opacity;
+  transition-timing-function: ease,ease,ease;
   width: 100%;
 }
 
