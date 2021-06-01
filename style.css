@@ -5,6 +5,7 @@ html{
   margin:0;
 padding:0;
 }
+
 body{
   
   color: #333333;
@@ -126,7 +127,7 @@ body{
   border-radius: 50%;
   box-sizing: border-box;
   color: #fff;
-  display: inline-block;
+  /* display: inline-block; */
   fill: #fff;
   font-size: 25px;
   line-height: 1;
@@ -143,24 +144,25 @@ body{
   background-color: transparent;
 }
 
-.bg-waktu{
+
+#bg-2{
   background-image: url(https://galipatstory.com/wp-content/uploads/2021/05/Faisal-Elin-1.jpeg);
   /* background-position: -488px 0; */
   background-repeat: no-repeat no-repeat;
   background-size: cover;
   box-sizing: border-box;
   height: 100%;
-  /* left: 0; */
-  opacity: .33;
-  /* position: absolute; */
-  /* top: 0; */
+  left: 0;
+  /* opacity: .33; */
+  position: relative;
+  top: 0;
   transition-delay: 0s,0s,0s;
   transition-duration: .3s,.3s,.3s;
   transition-property: background,border-radius,opacity;
   transition-timing-function: ease,ease,ease;
   width: 100%;
-  
 }
+
 .save-the-date{
   box-sizing: border-box;
   color: #121f38;
@@ -185,6 +187,152 @@ body{
   padding: 0;
 }
 
+.judul{
+  box-sizing: border-box;
+  color: #121f38;
+  font-family: "Open Sans",sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  letter-spacing: 11px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.letter{
+  box-sizing: border-box;
+  color: #7a9577;
+  font-family: Sacramento,sans-serif;
+  font-size: 63px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+
+.box-waktu{
+  position: relative;
+  max-width: 800px !important;
+  margin: auto;
+  padding-bottom: 35px;
+}
+
+#waktu{
+  margin-top: 180px;
+}
+
+.waktu-count{
+  background-color: #7a9577;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 10px 5px;
+  text-align: center;
+}
+.waktu-count>div.waktu{
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-family: "Playfair Display",sans-serif;
+  font-size: 50px;
+  font-weight: var(--e-global-typography-secondary-font-weight);
+  line-height: 1.3em;
+  text-align: center;
+}
+.waktu-count>div.text-waktu{
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
+  font-size: 18px;
+  font-weight: var(--e-global-typography-secondary-font-weight);
+  line-height: 1;
+  text-align: center;
+}
+.remember{
+  background-color: #7a9577;
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  fill: #fff;
+  font-family: var(--e-global-typography-accent-font-family),Sans-serif;
+  font-size: 15px;
+  font-weight: var(--e-global-typography-accent-font-weight);
+  line-height: 1;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: .3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: auto;
+  margin-bottom: 30px;
+
+  
+}
+.remember:hover {
+  background-color: #344f31;
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+
+}
+.text-remember{
+  box-sizing: border-box;
+  display: inline-block;
+  flex-grow: 1;
+  order: 10;
+  text-decoration: inherit inherit inherit;
+  
+}
+.icon{
+  margin-right: 13px;
+}
+.remember>span>i{
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-rendering: auto;
+}
+.text{
+  box-sizing: border-box;
+  color: #121f38;
+  font-family: "Open Sans",sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -.2px;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+#momen{
+  background-image: url(https://galipatstory.com/wp-content/uploads/2020/12/ORNAMEN-BG-02.png);
+  background-repeat: no-repeat no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  height: 100%;
+
+  /* opacity: .5; */
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
 @media (max-width: 576px) { 
 
   .our-wedding-icon{
@@ -196,11 +344,52 @@ body{
 
   .quotes{
    
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     letter-spacing: -.2px;
     line-height: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
+  .bapak,.ibu{
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .save-the-date{
+    font-size: 25px;
+  }
+  
+  
+.judul{
+  margin-bottom: 0.1em;
+}
+
+.letter{
+  font-size: 35px;
+  font-weight: 500;
+}
+  
+.waktu-count{
+ 
+  border-radius: 15px;
+  
+  margin-left: -3px;
+  margin-right: -3px;
+  padding: -4px 0px 10px;
+}
+.waktu-count>div.waktu{
+  
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.3em;
+}
+.waktu-count>div.text-waktu{
+  
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+
 
  }
