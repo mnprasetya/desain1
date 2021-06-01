@@ -407,6 +407,22 @@ body{
   margin: 0;
   padding: 0;
 }
+.maps{
+  border: 4px solid #7a9577;
+  box-shadow: rgba(0,0,0,.21) 0 30px 17px -19px;
+  box-sizing: border-box;
+  margin: 0 10px;
+  padding: 0;
+  transition-delay: 0s,0s,0s,0s,0s,0s;
+  transition-duration: .3s,.3s,.3s,.3s,.3s,.3s;
+  transition-property: background,border,border-radius,box-shadow,-webkit-border-radius,-webkit-box-shadow;
+  transition-timing-function: ease,ease,ease,ease,ease,ease;
+}
+.mapsz{
+  box-sizing: border-box;
+  line-height: 0;
+}
+
 @media (max-width: 576px) { 
 
   .our-wedding-icon{
