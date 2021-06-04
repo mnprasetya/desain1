@@ -578,6 +578,49 @@ div.guestbook-ucapan {
   font-size: 15px;
   font-weight: var(--e-global-typography-accent-font-weight);
 }
+
+.shape-fill{
+  fill: #7A9577;
+}
+
+div.masker{
+  
+    color: #3d3d3d;
+    font-family: "Medula One",sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+  
+}
+
+img.attachment-full.size-full {
+  border-radius: 0;
+  border-style: none;
+  box-shadow: none;
+  height: auto;
+  max-width: 100%;
+  transition-duration: .3s;
+
+  display: inline-block;
+  margin: 0 0 0 33px;
+  width: 35%;
+}
+p.text-covid{
+  
+    color: #3d3d3d;
+    font-family: "Medula One",sans-serif;
+    font-size: 26px;
+    font-weight: var(--e-global-typography-text-font-weight);
+    line-height: 1.2em;
+    margin: 0;
+  
+}
+.container-covid{
+  padding-left: 150px;
+  padding-right: 150px;
+}
 @media (max-width: 576px) { 
   .our-wedding-icon{
     max-width: 25% !important;
