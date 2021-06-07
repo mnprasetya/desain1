@@ -143,28 +143,28 @@
             </div>
           </div>
           <!-- jam -->
-          <div class="row box-waktu">
+          <div class="row box-waktu" id="waktunikah">
             <div class="col-3  animate__slow">
               <div class="row waktu-count wow animate__bounce animate__slower animate__infinite">
-                <div class="col-12 waktu">0</div>
+                <div class="col-12 waktu hari">N</div>
                 <div class="col-12 text-waktu ">Hari</div>
               </div>
             </div>
             <div class="col-3">
               <div class="row waktu-count wow animate__bounce animate__slow animate__infinite">
-                <div class="col-12 waktu">0</div>
+                <div class="col-12 waktu jam"></div>
                 <div class="col-12 text-waktu">Jam</div>
               </div>
             </div>
             <div class="col-3">
               <div class="row waktu-count  wow animate__bounce animate__slower animate__delay-1s animate__infinite">
-                <div class="col-12 waktu">0</div>
+                <div class="col-12 waktu menit">0</div>
                 <div class="col-12 text-waktu">Menit</div>
               </div>
             </div>
             <div class="col-3">
               <div class="row waktu-count wow animate__bounce  animate__infinite">
-                <div class="col-12 waktu">0</div>
+                <div class="col-12 waktu detik">0</div>
                 <div class="col-12 text-waktu">Detik</div>
               </div>
             </div>
@@ -369,7 +369,7 @@
     </svg>
   </div>
 
-  <section id="pakai-masker" class="py-lg-5 position-relative">
+  <!-- <section id="pakai-masker" class="py-lg-5 position-relative">
 
     <div class="container my-5 p-3">
       <div class="row text-center">
@@ -383,22 +383,22 @@
 
           <div class="row text-center m-5 ">
 
-            <div class="col-6">
+            <div class="col-6 col-md-6 col-xl-6 col-sm-12">
               <div class="row">
-                <div class="col-6">
+                <div class="col-8">
                   <p class="text-covid">
                     Tamu undangan wajib
                     menggunakan masker.
                   </p>
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                   <img class="attachment-full size-full"
                     src="https://galipatstory.com/wp-content/uploads/2020/12/wdp-ikon_covid_03.png" alt="" srcset="">
                 </div>
               </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 col-md-6 col-xl-6 col-sm-12">
 
               <div class="row">
 
@@ -418,7 +418,7 @@
               </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 col-md-6 col-xl-6 col-sm-12">
               <div class="row">
                 <div class="col-6">
                   <p class="text-covid">
@@ -434,7 +434,7 @@
               </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 col-md-6 col-xl-6 col-sm-12">
               <div class="row">
                 <div class="col-6">
                   <img class="attachment-full size-full"
@@ -463,7 +463,7 @@
     </div>
 
 
-  </section>
+  </section> -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -486,6 +486,53 @@
   <script>
     AOS.init();
   </script> -->
+
+  <script>
+    function getTimeRemaining(endtime) {
+      const total = Date.parse(endtime) - Date.parse(new Date());
+      const seconds = Math.floor((total / 1000) % 60);
+      const minutes = Math.floor((total / 1000 / 60) % 60);
+      const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+      const days = Math.floor(total / (1000 * 60 * 60 * 24));
+
+      return {
+        total,
+        days,
+        hours,
+        minutes,
+        seconds
+      };
+    }
+
+    function initializeClock(id, endtime) {
+      const clock = document.getElementById(id);
+      const hari = clock.querySelector('.hari');
+      const jam = clock.querySelector('.jam');
+      const menit = clock.querySelector('.menit');
+      const detik = clock.querySelector('.detik');
+
+      function updateClock() {
+        const t = getTimeRemaining(endtime);
+
+        hari.innerHTML = t.days;
+        jam.innerHTML = ('0' + t.hours).slice(-2);
+        menit.innerHTML = ('0' + t.minutes).slice(-2);
+        detik.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      const timeinterval = setInterval(updateClock, 1000);
+    }
+
+    // var deadline = new Date("Aug 5, 2021 00:00:00").getTime();
+    const deadline = new Date("June 8, 2021 00:00:00");
+    initializeClock('waktunikah', deadline);
+  </script>
+
 </body>
 
 </html>
