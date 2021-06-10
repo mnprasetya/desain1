@@ -40,6 +40,7 @@
   <!-- bootstrap5   -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
@@ -294,23 +295,43 @@
       <div class="row text-center d-flex align-items-center flex-sm-row mt-sm-5 m-auto box-galeri">
         <div class="galeri">
           <div class="row">
-            <div class="col-3">
-              <img class="img-fluid" src="img/a.png">
+            <div class="col-4 wow animate__fadeIn ">
+              <a class="" href="https://picsum.photos/id/1/800/500" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward.">
+                <img class="img-fluid example-image" src="https://picsum.photos/id/1/800/500">
+              </a>
             </div>
-            <div class="col-6">
-              <img class="img-fluid" src="img/a.png">
+            <div class="col-4 wow animate__fadeIn animate__delay-1s">
+              <a class="" href="https://picsum.photos/id/2/800/500" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward.">
+                <img class="img-fluid example-image" src="https://picsum.photos/id/2/800/500">
+              </a>
             </div>
-            <div class="col-3">
-              <img class="img-fluid" src="img/a.png">
+            <div class="col-4 wow animate__fadeIn animate__delay-2s">
+              <a class="" href="https://picsum.photos/id/3/800/500" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward.">
+                <img class="img-fluid example-image" src="https://picsum.photos/id/3/800/500">
+              </a>
             </div>
-            <div class="col-4">
-              <img class="img-fluid" src="img/a.png">
+          </div>
+          <div class="row pt-3">
+            <div class="col-4 wow animate__fadeIn animate__delay-3s">
+              <a class="" href="https://picsum.photos/id/4/800/500" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward.">
+                <img class="img-fluid example-image" src="https://picsum.photos/id/4/800/500">
+              </a>
             </div>
-            <div class="col-4">
-              <img class="img-fluid" src="img/a.png">
+            <div class="col-4 wow animate__fadeIn animate__delay-2s">
+              <a class="" href="https://picsum.photos/id/5/800/500" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward.">
+                <img class="img-fluid example-image" src="https://picsum.photos/id/5/800/500">
+              </a>
             </div>
-            <div class="col-4">
-              <img class="img-fluid" src="img/a.png">
+            <div class="col-4 wow animate__fadeIn animate__delay-1s">
+              <a class="" href="https://picsum.photos/id/6/800/500" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward.">
+                <img class="img-fluid example-image" src="https://picsum.photos/id/6/800/500">
+              </a>
             </div>
           </div>
         </div>
@@ -471,21 +492,11 @@
   <script>
     wow = new WOW({
       animateClass: 'animate__animated',
-      // offset: 100,
     });
     wow.init();
   </script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.3.0/js/lightgallery.min.js"></script>
-  <script>
-    lightGallery(document.querySelector('.galeri'), {
-      mode: 'lg-fade',
-      cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-    });
-  </script> -->
-  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script> -->
+  <script src="jquery.min.js"></script>
+
 
   <script>
     function getTimeRemaining(endtime) {
@@ -532,6 +543,7 @@
     const deadline = new Date("Dec 12, 2021 00:00:00");
     initializeClock('waktunikah', deadline);
   </script>
+
 
 </body>
 
