@@ -348,12 +348,15 @@
         <div class="col-12">
           <div class="container">
             <div class="group">
-              <input class="form-control" type="text" id="nama" placeholder="Nama">
-              <textarea class="form-control" id="pesan" cols="30" rows="4" placeholder="Pesan & Do'a"></textarea>
+              <form id="ucapanmu">
+                <input class="form-control" type="text" id="nama" placeholder="Nama" pattern="^[a-zA-Z]+$" required>
+                <textarea class="form-control" id="pesan" cols="30" rows="4" placeholder="Pesan & Do'a"
+                  required></textarea>
             </div>
             <div class="text-end">
               <button id="kirim-ucapan" class="kirim-ucapan" type="submit">Kirim Ucapan</button>
             </div>
+            </form>
           </div>
         </div>
         <div class="col-12 mt-5">
@@ -508,6 +511,9 @@
   </script>
   <script>
     $(document).ready(function () {
+
+
+
       // $('.kirim-ucapan').attr('hidden', true);
       let nama = $('.nama');
       let pesan = $('.pesan');
@@ -530,9 +536,12 @@
           $('.list-ucapan').append(data);
         }
       });
-      $('#kirim-ucapan').click(function () {
-        $('nama').attr('requirement');
-        $('pesam').attr('requirement');
+
+
+
+      $('#kirim-ucapan').click(function (e) {
+        e.preventDefault();
+
         let nama = $('#nama').val();
         let pesan = $('#pesan').val();
         // console.log(nama + ' ' + pesan);
@@ -544,14 +553,20 @@
             pesan: pesan,
           },
           success: function (data) {
-            $('.ucapan').text('Terimakasih atas doa dan ucapanmu - ' + nama + ' ^^').addClass(
-              'wow animate__jello animate__infinite');
+            $('.ucapan').text('Terimakasih atas doa dan ucapanmu - ' + nama + ' ^^').fadeIn(200).show()
+              .addClass(
+                'wow animate__jello animate__infinite');
             $('#nama').val('').attr('hidden', true);
             $('#pesan').val('').attr('hidden', true);
             $('#kirim-ucapan').val('').attr('hidden', true);
+            alert('Terimakasih, Ucapanmu berhasil Terkirim');
           }
         });
+        return false;
       });
+
+
+
     });
   </script>
 </body>
