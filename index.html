@@ -560,6 +560,10 @@
             $('#pesan').val('').attr('hidden', true);
             $('#kirim-ucapan').val('').attr('hidden', true);
             alert('Terimakasih, Ucapanmu berhasil Terkirim');
+            $('.list-ucapan').append(
+              '<div class="ucapan-teman overflow-auto"><div> <img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="guest-book-nama">' +
+              nama +
+              ' </div><div class="guest-book-ucapan">' + pesan + '</div></div></div>');
           }
         });
         return false;
