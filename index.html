@@ -144,25 +144,28 @@
           <!-- jam -->
           <div class="row box-waktu" id="waktunikah">
             <div class="col-3  animate__slow">
-              <div class="row waktu-count wow animate__bounce animate__slower animate__infinite">
+              <div
+                class="row waktu-count wow animate__bounce animate__slower animate__infinite text-center overflow-hidden">
                 <div class="col-12 waktu hari">N</div>
                 <div class="col-12 text-waktu ">Hari</div>
               </div>
             </div>
             <div class="col-3">
-              <div class="row waktu-count wow animate__bounce animate__slow animate__infinite">
+              <div
+                class="row waktu-count wow animate__bounce animate__slow animate__infinite text-center overflow-hidden">
                 <div class="col-12 waktu jam">O</div>
                 <div class="col-12 text-waktu">Jam</div>
               </div>
             </div>
             <div class="col-3">
-              <div class="row waktu-count  wow animate__bounce animate__slower animate__delay-1s animate__infinite">
+              <div
+                class="row waktu-count  wow animate__bounce animate__slower animate__delay-1s animate__infinite text-center overflow-hidden">
                 <div class="col-12 waktu menit">V</div>
                 <div class="col-12 text-waktu">Menit</div>
               </div>
             </div>
             <div class="col-3">
-              <div class="row waktu-count wow animate__bounce  animate__infinite">
+              <div class="row waktu-count wow animate__bounce  animate__infinite text-center overflow-hidden">
                 <div class="col-12 waktu detik">A</div>
                 <div class="col-12 text-waktu">Detik</div>
               </div>
@@ -560,10 +563,9 @@
             $('#pesan').val('').attr('hidden', true);
             $('#kirim-ucapan').val('').attr('hidden', true);
             alert('Terimakasih, Ucapanmu berhasil Terkirim');
-            $('.list-ucapan').append(
+            $('.list-ucapan').prepend(
               '<div class="ucapan-teman overflow-auto"><div> <img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="guest-book-nama">' +
-              nama +
-              ' </div><div class="guest-book-ucapan">' + pesan + '</div></div></div>');
+              nama + ' </div><div class="guest-book-ucapan">' + pesan + '</div></div></div>');
           }
         });
         return false;
