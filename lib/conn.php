@@ -1,3 +1,5 @@
 <?php
 error_reporting(0);
-$koneksi = mysqli_connect('localhost', 'root', '@mnprasetya12', 'wedding');
+header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
+$koneksi = mysqli_connect('localhost', 'user', 'password', 'database');

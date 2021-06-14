@@ -50,7 +50,6 @@
 </head>
 
 <body>
-
   <!-- slide 1  -->
   <section id="head" class="py-lg-2 position-relative mt-xl-5 mt-lg-5 mt-md-3 mt-sm-0 ">
     <div class="container m-auto my-5 p-3">
@@ -120,7 +119,6 @@
       </div>
     </div>
   </section>
-
   <!-- slide 2 -->
   <section id="waktu" class="py-lg-2 ">
     <div class="container my-5 p-3 position-relative bg-2">
@@ -189,7 +187,6 @@
         </div>
       </div>
   </section>
-
   <!-- slide 3 Resepsi Akad-->
   <section id="momen" class="py-lg-5 position-relative ">
     <div class="container my-5 p-3">
@@ -281,7 +278,6 @@
         </div>
       </div>
   </section>
-
   <!-- slide 4 Galeri & Kenangan-->
   <section id="galeri" class="py-lg-5 position-relative ">
     <div class="container my-5 p-3">
@@ -337,7 +333,6 @@
         </div>
       </div>
   </section>
-
   <!-- slide 5 Ucapan-->
   <section id="ucapan" class="py-lg-5 position-relative ">
     <div class="container my-5 p-3">
@@ -352,22 +347,17 @@
         </div>
         <div class="col-12">
           <div class="container">
-            <form target="/lib/kirim-ucapan.php" method="POST">
-              <div class="group">
-
-                <input class="form-control" type="text" name="nama" id="nama" placeholder="Nama">
-                <textarea class="form-control" name="pesan" id="pesan" cols="30" rows="4"
-                  placeholder="Pesan & Do'a"></textarea>
-              </div>
-              <div class="text-end">
-                <button class="kirim-ucapan" type="submit">Kirim Ucapan</button>
-              </div>
-            </form>
+            <div class="group">
+              <input class="form-control" type="text" id="nama" placeholder="Nama">
+              <textarea class="form-control" id="pesan" cols="30" rows="4" placeholder="Pesan & Do'a"></textarea>
+            </div>
+            <div class="text-end">
+              <button id="kirim-ucapan" class="kirim-ucapan" type="submit">Kirim Ucapan</button>
+            </div>
           </div>
         </div>
         <div class="col-12 mt-5">
           <div class="list-ucapan">
-
             <!-- <div class="ucapan-teman">
               <div>
                 <img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset="">
@@ -379,13 +369,11 @@
                 </div>
               </div>
             </div> -->
-
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- slide 6 pakai masker -->
   <div class="mt-1" data-negative="false">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice" class="">
@@ -394,9 +382,7 @@
       </path>
     </svg>
   </div>
-
-  <section id="pakai-masker" class="py-lg-5 position-relative">
-
+  <!-- <section id="pakai-masker" class="py-lg-5 position-relative">
     <div class="container my-5 p-3">
       <div class="row text-center">
         <div class="col-12 masker">
@@ -404,11 +390,8 @@
           Acara kami akan mengikuti segala prosedur protokol kesehatan untuk mencegah penularan COVID-19. So, don't be
           panic, we look forward to seeing you there!
         </div>
-
         <div class="container-covid">
-
           <div class="row text-center m-5 ">
-
             <div class="col-6 col-md-6 col-xl-6 col-sm-12">
               <div class="row">
                 <div class="col-8">
@@ -423,27 +406,20 @@
                 </div>
               </div>
             </div>
-
             <div class="col-6 col-md-6 col-xl-6 col-sm-12">
-
               <div class="row">
-
-
                 <div class="col-6">
                   <img class="attachment-full size-full"
                     src="https://galipatstory.com/wp-content/uploads/2020/12/wdp-ikon_covid_01.png" alt="" srcset="">
                 </div>
                 <div class="col-6">
                   <p class="text-covid">
-
                     Suhu tubuh normal
                     (dibawah 37,5°C)
                   </p>
                 </div>
-
               </div>
             </div>
-
             <div class="col-6 col-md-6 col-xl-6 col-sm-12">
               <div class="row">
                 <div class="col-6">
@@ -452,31 +428,25 @@
                     minimal sekitar 1 meter.
                   </p>
                 </div>
-
                 <div class="col-6">
                   <img class="attachment-full size-full"
                     src="https://galipatstory.com/wp-content/uploads/2020/12/wdp-ikon_covid_04.png" alt="" srcset="">
                 </div>
               </div>
             </div>
-
             <div class="col-6 col-md-6 col-xl-6 col-sm-12">
               <div class="row">
                 <div class="col-6">
                   <img class="attachment-full size-full"
                     src="https://galipatstory.com/wp-content/uploads/2020/12/wdp-ikon_covid_02.png" alt="" srcset="">
                 </div>
-
                 <div class="col-6">
                   <p class="text-covid">
-
                     Cuci tangan menggunakan air dan sabun atau menggunakan hand sanitizer.
                   </p>
                 </div>
-
               </div>
             </div>
-
             <div class="col-12">
               <p class="text-covid">
                 Bagi para tamu undangan diharapkan mengikuti protokol pencegahan COVID-19.
@@ -485,13 +455,8 @@
           </div>
         </div>
       </div>
-
     </div>
-
-
-  </section>
-
-
+  </section> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
   <script>
@@ -501,8 +466,6 @@
     wow.init();
   </script>
   <script src="jquery.min.js"></script>
-
-
   <script>
     function getTimeRemaining(endtime) {
       const total = Date.parse(endtime) - Date.parse(new Date());
@@ -510,7 +473,6 @@
       const minutes = Math.floor((total / 1000 / 60) % 60);
       const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
       const days = Math.floor(total / (1000 * 60 * 60 * 24));
-
       return {
         total,
         days,
@@ -529,75 +491,69 @@
 
       function updateClock() {
         const t = getTimeRemaining(endtime);
-
         hari.innerHTML = t.days;
         jam.innerHTML = ('0' + t.hours).slice(-2);
         menit.innerHTML = ('0' + t.minutes).slice(-2);
         detik.innerHTML = ('0' + t.seconds).slice(-2);
-
         if (t.total <= 0) {
           clearInterval(timeinterval);
         }
       }
-
       updateClock();
       const timeinterval = setInterval(updateClock, 1000);
     }
-
     // var deadline = new Date("Aug 5, 2021 00:00:00").getTime();
     const deadline = new Date("Dec 12, 2021 00:00:00");
     initializeClock('waktunikah', deadline);
   </script>
-
   <script>
     $(document).ready(function () {
-
+      // $('.kirim-ucapan').attr('hidden', true);
       let nama = $('.nama');
       let pesan = $('.pesan');
       let kirim = $('button[type="submit"]');
-
       // get pesan
       $.ajax({
         type: "get",
-        url: window.location.href + "lib/ucapan.php",
+        url: "https://novamedian.today",
+        format: "JSON",
+        crossDomain: true,
         dataType: "json",
         success: function (x) {
-
           let data = '';
-
           $.each(x, function (nx, value) {
-
             data +=
               '<div class="ucapan-teman"><div> <img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="guest-book-nama">' +
               value.nama +
               ' </div><div class="guest-book-ucapan">' + value.pesan + '</div></div></div>';
           });
           $('.list-ucapan').append(data);
-
         }
       });
-
-      $('.kirim-ucapan').on('click', function () {
-        let $nama = $('.nama');
-        let $pesan = $('.pesan');
+      $('#kirim-ucapan').click(function () {
+        $('nama').attr('requirement');
+        $('pesam').attr('requirement');
+        let nama = $('#nama').val();
+        let pesan = $('#pesan').val();
+        // console.log(nama + ' ' + pesan);
         $.ajax({
-          type: "post",
-          url: window.location.href + "lib/kirim-ucapan.php",
-          success: function () {
-
-            let data = {
-              nama: $nama.val(),
-              pesan: $pesan.val(),
-            }
-
-            console.log(data);
+          method: "POST",
+          url: "https://novamedian.today/send.php",
+          data: {
+            nama: nama,
+            pesan: pesan,
+          },
+          success: function (data) {
+            $('.ucapan').text('Terimakasih atas doa dan ucapanmu - ' + nama + ' ^^').addClass(
+              'wow animate__jello animate__infinite');
+            $('#nama').val('').attr('hidden', true);
+            $('#pesan').val('').attr('hidden', true);
+            $('#kirim-ucapan').val('').attr('hidden', true);
           }
         });
       });
-
     });
   </script>
-
 </body>
 
 </html>
