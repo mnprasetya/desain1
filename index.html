@@ -523,8 +523,8 @@
           let data = '';
           $.each(x, function (nx, value) {
             data +=
-              '<div class="ucapan-teman"><div><img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="d-flex justify-content-between"><div class="nama">' +
-              value.nama + '</div><div class="tanggal small">' + value.tanggal +
+              '<div class="ucapan-teman"><div><img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="d-flex justify-content-between"><div class="nama"><strong>' +
+              value.nama + '</strong></div><div class="tanggal small">' + value.tanggal +
               '</div></div><div class="guest-book-ucapan">' + value.pesan + '</div></div></div>';
           });
           $('.list-ucapan').append(data);
