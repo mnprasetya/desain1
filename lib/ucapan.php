@@ -13,9 +13,9 @@ $data_r = array();
 
 foreach ($data as $key => $value) {
     $data_r[] = array(
-        'nama' => htmlentities($value['nama']),
-        'pesan' => htmlentities($value['pesan']),
-        'tanggal' => htmlentities($value['tanggal'])
+        'nama' => htmlentities($value['nama'], ENT_QUOTES),
+        'pesan' => htmlentities($value['pesan'], ENT_QUOTES),
+        'tanggal' => htmlentities($value['tanggal'], ENT_QUOTES)
     );
 }
 

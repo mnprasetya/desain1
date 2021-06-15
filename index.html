@@ -513,6 +513,8 @@
       let pesan = $('.pesan');
       let tanggal = $('.tanggal');
       let kirim = $('button[type="submit"]');
+
+
       // get pesan
       $.ajax({
         type: "get",
@@ -533,13 +535,20 @@
       });
       $('#kirim-ucapan').click(function (e) {
         e.preventDefault();
+        let dateObj = new Date();
+        let tanggal = (dateObj.getUTCDate()) + "- 0" + (dateObj.getMonth() + 1) + "-" + (dateObj
+          .getUTCFullYear());
 
         let nama = $('#nama').val();
         let pesan = $('#pesan').val();
         // console.log(nama + ' ' + pesan);
         let sukses =
-          '<div class="ucapan-teman wow animate__headShake animate__infinite"><div> <img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="guest-book-nama">' +
-          nama + ' </div><div class="guest-book-ucapan">' + pesan + '</div></div></div>';
+          '<div class="ucapan-teman wow animate__headShake animate__infinite"><div><img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="d-flex justify-content-between"><div class="nama"><strong>' +
+          nama + '</strong></div><div class="tanggal small">' + tanggal +
+          '</div></div><div class="guest-book-ucapan">' + pesan + '</div></div></div>'
+
+
+        ;
         $.ajax({
           method: "POST",
           url: "https://novamedian.today/send.php",

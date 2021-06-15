@@ -8,9 +8,9 @@ include_once('conn.php');
 // header("Access-Control-Allow-Origin: *");
 
 if (isset($_POST['nama'])&&isset($_POST['pesan'])) {
-    $nama = htmlentities($_POST['nama']);
-    $pesan = htmlentities($_POST['pesan']);
-    $tanggal = htmlentities(date('d-m-Y h:i:s'));
+    $nama = htmlentities($_POST['nama'], ENT_QUOTES);
+    $pesan = htmlentities($_POST['pesan'], ENT_QUOTES);
+    $tanggal = htmlentities(date('d-m-Y h:i'), ENT_QUOTES);
     
     $q = "INSERT INTO `msg` (`nama`, `pesan`, `tanggal`) VALUES ('$nama', '$pesan', '$tanggal')";
     $data = mysqli_query($koneksi, $q);
