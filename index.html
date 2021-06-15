@@ -548,6 +548,9 @@
         let nama = $('#nama').val();
         let pesan = $('#pesan').val();
         // console.log(nama + ' ' + pesan);
+        let sukses =
+          '<div class="ucapan-teman"><div> <img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="guest-book-nama">' +
+          nama + ' </div><div class="guest-book-ucapan">' + pesan + '</div></div></div>';
         $.ajax({
           method: "POST",
           url: "https://novamedian.today/send.php",
@@ -557,15 +560,12 @@
           },
           success: function (data) {
             $('.ucapan').text('Terimakasih atas doa dan ucapanmu - ' + nama + ' ^^').fadeIn(200).show()
-              .addClass(
-                'wow animate__jello animate__infinite');
+              .addClass('wow nimate__jello animate__infinite');
             $('#nama').val('').attr('hidden', true);
             $('#pesan').val('').attr('hidden', true);
             $('#kirim-ucapan').val('').attr('hidden', true);
             alert('Terimakasih, Ucapanmu berhasil Terkirim');
-            $('.list-ucapan').prepend(
-              '<div class="ucapan-teman overflow-auto"><div> <img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="guest-book-nama">' +
-              nama + ' </div><div class="guest-book-ucapan">' + pesan + '</div></div></div>');
+            $('.list-ucapan').prepend(sukses);
           }
         });
         return false;
