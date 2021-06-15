@@ -11,6 +11,7 @@
   <meta name="title" content="Nova & Median  -  Pernikahan kami Nova & Median">
   <meta name="description"
     content="Hari ini tanggal xx Agustus 2021 adalah hari kami mengikat janji untuk saling setia dan saling menjaga satu sama lain, kami sangat mengharapkan kehadiranmu di dalam pesta kami.">
+  <meta property="og:image" content="img/a.png">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://novamedian.com/">
@@ -38,18 +39,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
   <!-- bootstrap5   -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/lightbox.min.css">
+  <link rel="stylesheet" href="asset/css/bootstrap.css">
+  <link rel="stylesheet" href="asset/css/animate.css">
+  <link rel="stylesheet" href="asset/css/lightbox.min.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.3.0/css/lightgallery.min.css" /> -->
   <!-- css -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="asset/css/style.css">
 </head>
 
 <body>
+  <!-- <audio autoplay="true">
+    <source src="a.mp3" type="audio/mpeg">
+  </audio> -->
+  <div id="music">
+    <audio controls autoplay loop>
+      <source src="a.mp3" type="audio/mpeg">
+      <p>If you can read this, your browser does not support the audio element.</p>
+    </audio>
+  </div>
+
+
   <!-- slide 6 pakai masker -->
   <div class="mt-n1" data-negative="false">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice" class="">
@@ -102,7 +114,7 @@
         <!-- foto couple -->
         <div class="col-md-4 col-sm-12 col-xl-4  wow animate__pulse animate__repeat-2">
           <div class="couple ">
-            <img class="image" src="img/a.png" alt="foto">
+            <img class="image" src="asset/img/a.png" alt="foto">
           </div>
         </div>
         <!-- wanita -->
@@ -458,14 +470,14 @@
   </section> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="asset/js/script.js"></script>
   <script>
     wow = new WOW({
       animateClass: 'animate__animated',
     });
     wow.init();
   </script>
-  <script src="jquery.min.js"></script>
+  <script src="asset/js/jquery.min.js"></script>
   <script>
     function getTimeRemaining(endtime) {
       const total = Date.parse(endtime) - Date.parse(new Date());
@@ -515,6 +527,7 @@
       let kirim = $('button[type="submit"]');
 
 
+
       // get pesan
       $.ajax({
         type: "get",
@@ -545,10 +558,7 @@
         let sukses =
           '<div class="ucapan-teman wow animate__headShake animate__infinite"><div><img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="d-flex justify-content-between"><div class="nama"><strong>' +
           nama + '</strong></div><div class="tanggal small">' + tanggal +
-          '</div></div><div class="guest-book-ucapan">' + pesan + '</div></div></div>'
-
-
-        ;
+          '</div></div><div class="guest-book-ucapan">' + pesan + '</div></div></div>';
         $.ajax({
           method: "POST",
           url: "https://novamedian.today/send.php",
@@ -570,8 +580,14 @@
         });
         // return false;
       });
+
+
+
     });
   </script>
+
+
+
 </body>
 
 </html>
