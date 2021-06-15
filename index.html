@@ -15,6 +15,9 @@
   <link rel="icon" href="asset/img/a.png" sizes="32x32" />
   <link rel="icon" href="asset/img/a.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="asset/img/a.png" />
+
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://novamedian.com/">
@@ -57,11 +60,11 @@
   <!-- <audio autoplay="true">
     <source src="a.mp3" type="audio/mpeg">
   </audio> -->
-  <div id="music">
-    <audio controls autoplay loop>
+  <div class="music">
+    <!-- <audio controls autoplay loop>
       <source src="music/a.mp3" type="audio/mpeg">
       <p>If you can read this, your browser does not support the audio element.</p>
-    </audio>
+    </audio> -->
   </div>
 
 
@@ -528,7 +531,9 @@
       let pesan = $('.pesan');
       let tanggal = $('.tanggal');
       let kirim = $('button[type="submit"]');
-
+      $('.music').html(
+        '<audio controls autoplay=1> <source src="/music/a.mp3"  type="audio/mpeg"> </audio>'
+      );
 
 
       // get pesan
