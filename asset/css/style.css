@@ -707,7 +707,7 @@ a:hover {
 /* anti dibuah */
 .wdp-mempelai {
   font-family: "Dancing Script", Sans-serif;
-  font-size: 33px;
+  font-size: 50px;
 }
 .wdp-dear {
   text-align: center;
@@ -718,19 +718,24 @@ a:hover {
   color: #fff;
   font-size: 18px;
   height: auto;
-  margin-top: 15px;
+  margin-top: 5px;
   text-align: center;
+  
   width: 100%;
 }
+
 .wdp-button-wrapper {
   height: auto;
-  margin-top: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
   width: 100%;
 }
 
 .wdp-name {
-  margin-top: 15px;
+  margin-top: 25px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 30pt;
 }
 .elementor-button {
   background-color: #545454;
@@ -749,8 +754,8 @@ a:hover {
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   padding: 7px 15px;
-  border: 1px solid rgb(221, 221, 221);
-  border-radius: 3px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
   color: rgba(0, 0, 0, 0.8);
   background: rgb(230, 230, 230);
   font-size: 14px;
@@ -760,13 +765,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   appearance: button;
 }
+
 button {
   overflow: visible;
 }
 
 .removeModals {
   transform: translateY(200%);
-  transition: 0.4s ease-in-out
+  transition: 2s ease-in-out
 }
 
 @media (max-width: 576px) { 

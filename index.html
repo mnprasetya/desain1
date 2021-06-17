@@ -19,14 +19,14 @@
   <meta http-equiv="Expires" content="-1">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://novamedian.com/">
+  <meta property="og:url" content="https://novamedian.today/">
   <meta property="og:title" content="Nova & Median  -  Pernikahan kami Nova & Median">
   <meta property="og:description"
     content="Hari ini tanggal xx Agustus 2021 adalah hari kami mengikat janji untuk saling setia dan saling menjaga satu sama lain, kami sangat mengharapkan kehadiranmu di dalam pesta kami.">
   <meta property="og:image" content="img/a.png">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://novamedian.com/">
+  <meta property="twitter:url" content="https://novamedian.today/">
   <meta property="twitter:title" content="Nova & Median  -  Pernikahan kami Nova & Median">
   <meta property="twitter:description"
     content="Hari ini tanggal xx Agustus 2021 adalah hari kami mengikat janji untuk saling setia dan saling menjaga satu sama lain, kami sangat mengharapkan kehadiranmu di dalam pesta kami.">
@@ -50,7 +50,6 @@
   <link rel="stylesheet" href="asset/css/bootstrap.css">
   <link rel="stylesheet" href="asset/css/animate.css">
   <link rel="stylesheet" href="asset/css/lightbox.min.css">
-  <link rel="stylesheet" href="asset/css/modal.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
@@ -613,6 +612,15 @@
 
   <!-- popup -->
   <script>
+    let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).replaceAll('%20', ' ');
+    let url = window.location.href;
+    if (url == hashes) {
+      $('.wdp-name').text('TULSI NAMA UNDANGAN');
+    } else {
+
+      $('.wdp-name').text(hashes).css('font');
+    }
+
     const sampul = $('.modalx').data('sampul');
     $('.modalx').css('background-image', 'url(' + sampul + ')');
     $('body').css('overflow', 'hidden');
