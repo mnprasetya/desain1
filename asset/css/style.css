@@ -4,7 +4,7 @@ html{
 padding:0;
 }
 #music , .music {
-  display:none;
+  /* display:none; */
 }
 body{
   color: #333333;
