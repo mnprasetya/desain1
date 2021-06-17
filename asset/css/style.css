@@ -41,7 +41,6 @@ body{
   padding: 0;
   text-transform: uppercase;
 }
-
 .quotes{
   box-sizing: border-box;
   color: #7a9577;
@@ -53,7 +52,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 #pengantin{
   box-sizing: border-box;
   color: #7a7a7a;
@@ -65,7 +63,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .putra,.putri{
   color: #7a9577;
   font-family: Sacramento,sans-serif;
@@ -76,12 +73,10 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .putra-dari,.putri-dari{
   /* box-sizing: border-box; */
   font-weight: 700;
 }
-
 .bapak,.ibu{
   color: #7a7a7a;
   font-family: "Open Sans",sans-serif;
@@ -92,7 +87,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .couple{
   box-sizing: border-box;
   display: flex;
@@ -101,7 +95,6 @@ body{
   justify-content: center;
   width: 100%;
 }
-
 .image{
   border-radius: 0;
            border-style: none;
@@ -112,7 +105,6 @@ body{
            max-width: 80%;
            vertical-align: middle;
 }
-
 .play{
   background-color: #000;
   border-radius: 50%;
@@ -129,11 +121,9 @@ body{
   transition-property: all;
   transition-timing-function: ease;
 }
-
 .play:hover {
   background-color: transparent;
 }
-
 #bg-2{
   background-image: url(https://galipatstory.com/wp-content/uploads/2021/05/Faisal-Elin-1.jpeg);
   /* background-position: -488px 0; */
@@ -151,7 +141,6 @@ body{
   transition-timing-function: ease,ease,ease;
   width: 100%;
 }
-
 .save-the-date{
   box-sizing: border-box;
   color: #121f38;
@@ -163,7 +152,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .undangan-pernikahan{
   box-sizing: border-box;
   color: #7a9577;
@@ -175,7 +163,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .judul{
   box-sizing: border-box;
   color: #121f38;
@@ -187,7 +174,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .letter{
   box-sizing: border-box;
   color: #7a9577;
@@ -199,18 +185,15 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .box-waktu{
   position: relative;
   max-width: 800px !important;
   margin: auto;
   padding-bottom: 35px;
 }
-
 #waktu{
   margin-top: 180px;
 }
-
 .waktu-count{
   background-color: #7a9577;
   border-radius: 12px;
@@ -223,7 +206,6 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 .waktu-count>div.waktu{
   box-sizing: border-box;
   color: #fff;
@@ -234,20 +216,17 @@ body{
   line-height: 1.3em;
   text-align: center;
 }
-
 .waktu-count>div.text-waktu{
   box-sizing: border-box;
   color: #fff;
   display: block;
   font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
   font-size: 18px !important;
-  
   font-weight: var(--e-global-typography-secondary-font-weight);
   line-height: 1;
   text-align: center;
   left:0;
 }
-
 .remember{
   background-color: #7a9577;
   border-radius: 3px;
@@ -270,14 +249,12 @@ body{
   width: auto;
   margin-bottom: 30px;
 }
-
 .remember:hover {
   background-color: #344f31;
   opacity: 1;
   outline: 0;
   color: #fff;
 }
-
 .text-remember{
   box-sizing: border-box;
   display: inline-block;
@@ -285,11 +262,9 @@ body{
   order: 10;
   text-decoration: inherit inherit inherit;
 }
-
 .icon{
   margin-right: 13px;
 }
-
 .remember>span>i{
   box-sizing: border-box;
   display: inline-block;
@@ -303,7 +278,6 @@ body{
   line-height: 1;
   text-rendering: auto;
 }
-
 .text{
   box-sizing: border-box;
   color: #121f38;
@@ -315,7 +289,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 #momen{
   background-image: url(https://galipatstory.com/wp-content/uploads/2020/12/ORNAMEN-BG-02.png);
   background-repeat: no-repeat no-repeat;
@@ -332,7 +305,6 @@ body{
   transition-timing-function: ease,ease,ease;
   width: 100%;
 }
-
 .invitation-text{
   box-sizing: border-box;
   color: #121f38;
@@ -345,7 +317,6 @@ body{
   padding: 0;
   text-transform: uppercase;
 }
-
 .momen-card{
   background-color: #fff;
   border-radius: 7px;
@@ -356,18 +327,15 @@ body{
   transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
   width: 100%;
 }
-
 .text-mp{
   color: #7a9577;
 }
-
 .box-momen{
   position: relative;
   max-width: 800px !important;
   margin: auto;
   padding-bottom: 35px;
 }
-
 .text-momen-judul{
   box-sizing: border-box;
   color: #7a9577;
@@ -375,7 +343,6 @@ body{
   font-weight: 500;
   margin-bottom: 5px;
 }
-
 .text-momen-tanggal{
   box-sizing: border-box;
   color: #7a7a7a;
@@ -384,7 +351,6 @@ body{
   font-weight: var(--e-global-typography-text-font-weight);
   margin: 0;
 }
-
 .text-momen-pukul{
   box-sizing: border-box;
   color: #121f38;
@@ -396,7 +362,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .text-momen-jam{
   box-sizing: border-box;
   color: #121f38;
@@ -408,7 +373,6 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .maps{
   border: 4px solid #7a9577;
   box-shadow: rgba(0,0,0,.21) 0 30px 17px -19px;
@@ -420,12 +384,10 @@ body{
   transition-property: background,border,border-radius,box-shadow,-webkit-border-radius,-webkit-box-shadow;
   transition-timing-function: ease,ease,ease,ease,ease,ease;
 }
-
 .mapsz{
   box-sizing: border-box;
   line-height: 0;
 }
-
   span.divider-separator {
     align-items: center;
     direction: ltr;
@@ -433,7 +395,6 @@ body{
     margin: 0 auto;
     width: 33%;
   }
-
 .ucapan{
   box-sizing: border-box;
   color: #121f38;
@@ -446,7 +407,6 @@ body{
   padding: 0;
   text-transform: uppercase;
 }
-
 .form-control{
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -483,14 +443,11 @@ body{
     transition-property: box-shadow;
     transition-timing-function: ease;
     width: 100%;
-  
 }
-
 div.button-wrapper {
   margin-bottom: 10px;
   margin-top: 15px;
 }
-
 button.kirim-ucapan {
   appearance: button;
   background-color: #7a9577;
@@ -533,7 +490,6 @@ div.ucapan-teman {
   margin-bottom: 10px;
 }
 img.img{
-  
     border: 2px solid #fff;
     border-radius: 50%;
     box-shadow: rgba(0,0,0,.2) 0 1px 2px;
@@ -543,11 +499,7 @@ img.img{
     right: 10px;
     top: 0;
     width: 40px;
-  
 }
-
-
-
 div.guest-book{
     background-color: #fcfcfc;
     border-radius: 8px;
@@ -586,13 +538,10 @@ div.guestbook-ucapan {
   font-size: 15px;
   font-weight: var(--e-global-typography-accent-font-weight);
 }
-
 .shape-fill{
   fill: #7A9577;
 }
-
 div.masker{
-  
     color: #3d3d3d;
     font-family: "Medula One",sans-serif;
     font-size: 26px;
@@ -600,9 +549,7 @@ div.masker{
     line-height: 1.4em;
     margin: 0;
     padding: 0;
-  
 }
-
 img.attachment-full.size-full {
   border-radius: 0;
   border-style: none;
@@ -610,27 +557,22 @@ img.attachment-full.size-full {
   height: auto;
   max-width: 100%;
   transition-duration: .3s;
-
   display: inline-block;
   margin: 0 0 0 33px;
   width: 35%;
 }
 p.text-covid{
-  
     color: #3d3d3d;
     font-family: "Medula One",sans-serif;
     font-size: 26px;
     font-weight: var(--e-global-typography-text-font-weight);
     line-height: 1.2em;
     margin: 0;
-  
 }
 .container-covid{
   padding-left: 150px;
   padding-right: 150px;
 }
-
-
 .container .gallery a img {
   float: left;
   width: 25%;
@@ -643,21 +585,17 @@ p.text-covid{
   transition: transform .15s ease;
   position: relative;
 }
-
 .clear {
   clear: both;
 }
-
 a {
   color: #009688;
   text-decoration: none;
 }
-
 a:hover {
   color: #01695f;
   text-decoration: none;
 }
-
 .overlayy {
   background-color: #000;
   height: 100%;
@@ -668,7 +606,6 @@ a:hover {
   width: 100%;
   z-index: 2001;
 }
-
 .modalx {
   position: fixed;
   z-index: 2000;
@@ -713,17 +650,14 @@ a:hover {
   text-align: center;
   margin-top: 15px;
 }
-
 .wdp-dear {
   color: #fff;
   font-size: 18px;
   height: auto;
   margin-top: 5px;
   text-align: center;
-  
   width: 100%;
 }
-
 .wdp-button-wrapper {
   height: auto;
   margin-top: 30px;
@@ -731,7 +665,6 @@ a:hover {
   text-align: center;
   width: 100%;
 }
-
 .wdp-name {
   margin-top: 25px;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -765,16 +698,13 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   appearance: button;
 }
-
 button {
   overflow: visible;
 }
-
 .removeModals {
   transform: translateY(200%);
   transition: 2s ease-in-out
 }
-
 @media (max-width: 576px) { 
   .our-wedding-icon{
     max-width: 25% !important;
@@ -818,16 +748,16 @@ button {
   color: #fff;
   font-size: 13px !important;
   line-height: 1;
-
 }
-
 .ucapan{
   font-size: 14px;
-
 }
-
 .wdp-mempelai {
   font-family: "Dancing Script", Sans-serif;
   font-size: 53px;
+}
+.removeModals {
+  transform: translateY(200%);
+  transition: 3s ease-in-out
 }
  }

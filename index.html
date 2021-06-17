@@ -67,7 +67,7 @@
       <source src="music/a.mp3" type="audio/mpeg">
       <p>If you can read this, your browser does not support the audio element.</p>
     </audio> -->
-    <audio onload="play()" id="music" src="music/a.mp3" type="audio/mp3">
+    <audio onload="play()" loop id="music" src="music/a.mp3" type="audio/mp3">
     </audio>
   </div>
   <!-- slide 6 pakai masker -->
@@ -171,7 +171,7 @@
           </div>
           <!-- jam -->
           <div class="row box-waktu" id="waktunikah">
-            <div class="col-3  animate__slow">
+            <div class="col-3 animate__slow">
               <div
                 class="row waktu-count wow animate__bounce animate__slower animate__infinite text-center overflow-hidden">
                 <div class="col-12 waktu hari">N</div>
@@ -483,7 +483,7 @@
           <div class="wdp-mempelai">Nova &amp; Median
           </div>
           <div class="wdp-dear">Undangan Spesial Untuk :</div>
-          <div class="wdp-name">NAMA</div>
+          <div class="wdp-name text-uppercase">NAMA</div>
           <div class="wdp-button-wrapper">
             <button class="elementor-button">
               <span>
@@ -612,7 +612,8 @@
 
   <!-- popup -->
   <script>
-    let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).replaceAll('%20', ' ');
+    let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).replaceAll('%20', ' ').replaceAll(
+      '%27', "'");
     let url = window.location.href;
     if (url == hashes) {
       $('.wdp-name').text('TULSI NAMA UNDANGAN');
@@ -624,7 +625,7 @@
     const sampul = $('.modalx').data('sampul');
     $('.modalx').css('background-image', 'url(' + sampul + ')');
     $('body').css('overflow', 'hidden');
-    $('.wdp-button-wrapper button').on('click', function () {
+    $('.elementor-button').on('click', function () {
       $('.modalx').addClass('removeModals');
       $('body').css('overflow', 'auto');
       document.getElementById("music").play();
