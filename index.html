@@ -548,15 +548,11 @@
   <!-- ucapan -->
   <script>
     $(document).ready(function () {
-      // $('.kirim-ucapan').attr('hidden', true);
       let nama = $('.nama');
       let pesan = $('.pesan');
       let tanggal = $('.tanggal');
       let kirim = $('button[type="submit"]');
-      // $('.music').html(
-      //   '<audio controls autoplay=1 loop=1> <source src="music/a.mp3"  type="audio/mpeg"> </audio>'
-      // );
-      // get pesan
+
       $.ajax({
         type: "get",
         url: "https://api.novamedian.today",
@@ -574,6 +570,7 @@
           $('.list-ucapan').append(data);
         }
       });
+
       $('#kirim-ucapan').click(function (e) {
         e.preventDefault();
         let dateObj = new Date();
@@ -581,7 +578,6 @@
           .getUTCFullYear());
         let nama = $('#nama').val();
         let pesan = $('#pesan').val();
-        // console.log(nama + ' ' + pesan);
         let sukses =
           '<div class="ucapan-teman wow animate__headShake animate__infinite"><div><img class="img" src="https://galipatstory.com/wp-content/uploads/2020/12/07.png" alt="" srcset=""></div><div class="guest-book"><div class="d-flex justify-content-between"><div class="nama"><strong>' +
           nama + '</strong></div><div class="tanggal small">' + tanggal +
@@ -594,8 +590,6 @@
             pesan: pesan,
           },
           success: function (data) {
-            // $('.ucapan').text('Terimakasih atas doa dan ucapanmu - ' + nama + ' ^^').fadeIn(2000).show()
-            //   .addClass('wow nimate__jello animate__infinite');
             $('#nama').val('').attr('hidden', true);
             $('#pesan').val('').attr('hidden', true);
             $('#greet').text('Terimakasih atas doa dan ucapanmu - ' + nama + ' ^^').addClass(
@@ -616,10 +610,11 @@
       '%27', "'");
     let url = window.location.href;
     if (url == hashes) {
-      $('.wdp-name').text('TULSI NAMA UNDANGAN');
+      $('.wdp-name').text('TULSI NAMA');
     } else {
 
-      $('.wdp-name').text(hashes).css('font');
+      $('#nama').val(hashes);
+      $('.wdp-name').text(hashes);
     }
 
     const sampul = $('.modalx').data('sampul');
