@@ -213,12 +213,15 @@ body{
 
 .waktu-count{
   background-color: #7a9577;
-  border-radius: 15px;
+  border-radius: 12px;
   box-sizing: border-box;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 13px;
+  margin-right: 13px;
   padding: 10px 5px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .waktu-count>div.waktu{
@@ -226,7 +229,7 @@ body{
   color: #fff;
   display: block;
   font-family: "Playfair Display",sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: var(--e-global-typography-secondary-font-weight);
   line-height: 1.3em;
   text-align: center;
@@ -237,11 +240,12 @@ body{
   color: #fff;
   display: block;
   font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
-  font-size: 14px;
+  font-size: 18px !important;
   
   font-weight: var(--e-global-typography-secondary-font-weight);
   line-height: 1;
   text-align: center;
+  left:0;
 }
 
 .remember{
@@ -801,13 +805,14 @@ button {
 }
 .waktu-count>div.waktu{
   color: #fff;
-  font-size: 50px;
+  font-size: 24pt;
   line-height: 1.3em;
 }
 .waktu-count>div.text-waktu{
   color: #fff;
-  font-size: 18px;
+  font-size: 13px !important;
   line-height: 1;
+
 }
 
 .ucapan{
