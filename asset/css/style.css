@@ -4,7 +4,7 @@ html{
 padding:0;
 }
 #music , .music {
-  /* display:none; */
+  display:none;
 }
 body{
   color: #333333;
@@ -237,7 +237,8 @@ body{
   color: #fff;
   display: block;
   font-family: var(--e-global-typography-secondary-font-family),Sans-serif;
-  font-size: 18px;
+  font-size: 14px;
+  
   font-weight: var(--e-global-typography-secondary-font-weight);
   line-height: 1;
   text-align: center;
@@ -653,6 +654,116 @@ a:hover {
   text-decoration: none;
 }
 
+.overlayy {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2001;
+}
+
+.modalx {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translateY(0px);
+}
+.content-modalx {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2002;
+  top: 10px;
+  color: rgb(255, 255, 255);
+  left: 0px;
+}
+.info_modalx {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.info_modalx > div {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+/* anti dibuah */
+.wdp-mempelai {
+  font-family: "Dancing Script", Sans-serif;
+  font-size: 33px;
+}
+.wdp-dear {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.wdp-dear {
+  color: #fff;
+  font-size: 18px;
+  height: auto;
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+.wdp-button-wrapper {
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.wdp-name {
+  margin-top: 15px;
+}
+.elementor-button {
+  background-color: #545454;
+}
+.elementor-button {
+  display: inline-block;
+  line-height: 1;
+  background-color: rgb(129, 138, 145);
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  padding: 7px 15px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgb(230, 230, 230);
+  font-size: 14px;
+  line-height: 1.6;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  appearance: button;
+}
+button {
+  overflow: visible;
+}
+
+.removeModals {
+  transform: translateY(200%);
+  transition: 0.4s ease-in-out
+}
 
 @media (max-width: 576px) { 
   .our-wedding-icon{
@@ -702,5 +813,10 @@ a:hover {
 .ucapan{
   font-size: 14px;
 
+}
+
+.wdp-mempelai {
+  font-family: "Dancing Script", Sans-serif;
+  font-size: 53px;
 }
  }

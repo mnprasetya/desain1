@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,6 @@
   <link rel="icon" href="asset/img/a.png" sizes="32x32" />
   <link rel="icon" href="asset/img/a.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="asset/img/a.png" />
-
   <meta http-equiv="Cache-control" content="no-cache">
   <meta http-equiv="Expires" content="-1">
   <!-- Open Graph / Facebook -->
@@ -24,14 +23,14 @@
   <meta property="og:title" content="Nova & Median  -  Pernikahan kami Nova & Median">
   <meta property="og:description"
     content="Hari ini tanggal xx Agustus 2021 adalah hari kami mengikat janji untuk saling setia dan saling menjaga satu sama lain, kami sangat mengharapkan kehadiranmu di dalam pesta kami.">
-  <meta property="og:image" content="https://novamedian.com/img/a.png">
+  <meta property="og:image" content="img/a.png">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://novamedian.com/">
   <meta property="twitter:title" content="Nova & Median  -  Pernikahan kami Nova & Median">
   <meta property="twitter:description"
     content="Hari ini tanggal xx Agustus 2021 adalah hari kami mengikat janji untuk saling setia dan saling menjaga satu sama lain, kami sangat mengharapkan kehadiranmu di dalam pesta kami.">
-  <meta property="twitter:image" content="https://novamedian.com/img/a.png">
+  <meta property="twitter:image" content="img/a.png">
   <!-- seo -->
   <!-- font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -44,24 +43,20 @@
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <!-- bootstrap5   -->
   <link rel="stylesheet" href="asset/css/bootstrap.css">
   <link rel="stylesheet" href="asset/css/animate.css">
   <link rel="stylesheet" href="asset/css/lightbox.min.css">
+  <link rel="stylesheet" href="asset/css/modal.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.3.0/css/lightgallery.min.css" /> -->
   <!-- css -->
   <link rel="stylesheet" href="asset/css/style.css">
-  <script type="text/javascript">
-    window.onload = function () {
-
-      var audio = document.getElementById("music");
-      audio.play();
-
-    }
-  </script>
 </head>
 
 <body>
@@ -73,13 +68,9 @@
       <source src="music/a.mp3" type="audio/mpeg">
       <p>If you can read this, your browser does not support the audio element.</p>
     </audio> -->
-    <audio id="music" src="https://novamedian.today/a.mp3" type="audio/mp3">
+    <audio onload="play()" id="music" src="music/a.mp3" type="audio/mp3">
     </audio>
   </div>
-
-
-
-
   <!-- slide 6 pakai masker -->
   <div class="mt-n1" data-negative="false">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice" class="">
@@ -88,7 +79,6 @@
       </path>
     </svg>
   </div>
-
   <!-- slide 1  -->
   <section id="head" class="py-lg-2 position-relative mt-xl-5 mt-lg-5 mt-md-3 mt-sm-0 ">
     <div class="container m-auto my-5 p-3">
@@ -131,7 +121,7 @@
           </div>
         </div>
         <!-- foto couple -->
-        <div class="col-md-4 col-sm-12 col-xl-4  wow animate__pulse animate__repeat-2">
+        <div class="col-md-4 col-sm-12 col-xl-4  wow animate__pulse animate__infinite">
           <div class="couple ">
             <img class="image" src="asset/img/a.png" alt="foto">
           </div>
@@ -405,13 +395,10 @@
         <div class="col-12 ">
           <div class="list-ucapan">
           </div>
-
         </div>
       </div>
     </div>
   </section>
-
-
   <!-- <section id="pakai-masker" class="py-lg-5 position-relative">
     <div class="container my-5 p-3">
       <div class="row text-center">
@@ -487,9 +474,30 @@
       </div>
     </div>
   </section> -->
-
+  <!-- kepada yang terhormat -->
+  <section>
+    <div class="modalx" data-sampul='asset/img/sample.png'>
+      <div class="overlayy"></div>
+      <div class="content-modalx">
+        <div class="info_modalx">
+          <div class="elementor-image img"></div>
+          <div class="wdp-mempelai">Nova &amp; Median
+          </div>
+          <div class="wdp-dear">Undangan Spesial Untuk :</div>
+          <div class="wdp-name">NAMA</div>
+          <div class="wdp-button-wrapper">
+            <button class="elementor-button">
+              <span>
+                <i aria-hidden="true" class="far fa-envelope-open"></i> </span>
+              Buka Undangan </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="asset/js/script.js"></script>
+  <!-- animasi -->
   <script>
     wow = new WOW({
       animateClass: 'animate__animated',
@@ -497,6 +505,7 @@
     wow.init();
   </script>
   <script src="asset/js/jquery.min.js"></script>
+  <!-- hitung mundur -->
   <script>
     function getTimeRemaining(endtime) {
       const total = Date.parse(endtime) - Date.parse(new Date());
@@ -534,12 +543,12 @@
       const timeinterval = setInterval(updateClock, 1000);
     }
     // var deadline = new Date("Aug 5, 2021 00:00:00").getTime();
-    const deadline = new Date("Dec 12, 2021 00:00:00");
+    const deadline = new Date("jul 01, 2021 00:00:00");
     initializeClock('waktunikah', deadline);
   </script>
+  <!-- ucapan -->
   <script>
     $(document).ready(function () {
-
       // $('.kirim-ucapan').attr('hidden', true);
       let nama = $('.nama');
       let pesan = $('.pesan');
@@ -548,12 +557,10 @@
       // $('.music').html(
       //   '<audio controls autoplay=1 loop=1> <source src="music/a.mp3"  type="audio/mpeg"> </audio>'
       // );
-
-
       // get pesan
       $.ajax({
         type: "get",
-        url: "https://novamedian.today",
+        url: "https://api.novamedian.today",
         format: "JSON",
         crossDomain: true,
         dataType: "json",
@@ -573,7 +580,6 @@
         let dateObj = new Date();
         let tanggal = (dateObj.getUTCDate()) + "- 0" + (dateObj.getMonth() + 1) + "-" + (dateObj
           .getUTCFullYear());
-
         let nama = $('#nama').val();
         let pesan = $('#pesan').val();
         // console.log(nama + ' ' + pesan);
@@ -583,7 +589,7 @@
           '</div></div><div class="guest-book-ucapan">' + pesan + '</div></div></div>';
         $.ajax({
           method: "POST",
-          url: "https://novamedian.today/send.php",
+          url: "https://api.novamedian.today/send.php",
           data: {
             nama: nama,
             pesan: pesan,
@@ -602,13 +608,20 @@
         });
         // return false;
       });
-
     });
   </script>
 
-
-
-
+  <!-- popup -->
+  <script>
+    const sampul = $('.modalx').data('sampul');
+    $('.modalx').css('background-image', 'url(' + sampul + ')');
+    $('body').css('overflow', 'hidden');
+    $('.wdp-button-wrapper button').on('click', function () {
+      $('.modalx').addClass('removeModals');
+      $('body').css('overflow', 'auto');
+      document.getElementById("music").play();
+    });
+  </script>
 </body>
 
 </html>
