@@ -68,6 +68,11 @@
   </div>
 
 
+  <audio id="music">
+    <source src="music/a.mp3" type="audio/mp3">
+  </audio>
+
+
   <!-- slide 6 pakai masker -->
   <div class="mt-n1" data-negative="false">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice" class="">
@@ -531,9 +536,9 @@
       let pesan = $('.pesan');
       let tanggal = $('.tanggal');
       let kirim = $('button[type="submit"]');
-      $('.music').html(
-        '<audio controls autoplay=1> <source src="/music/a.mp3"  type="audio/mpeg"> </audio>'
-      );
+      // $('.music').html(
+      //   '<audio controls autoplay=1 loop=1> <source src="music/a.mp3"  type="audio/mpeg"> </audio>'
+      // );
 
 
       // get pesan
@@ -589,11 +594,13 @@
         // return false;
       });
 
-
-
     });
   </script>
 
+  <script>
+    var x = document.getElementById("music");
+    x.play();
+  </script>
 
 
 </body>
