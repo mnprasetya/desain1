@@ -542,7 +542,7 @@
       const timeinterval = setInterval(updateClock, 1000);
     }
     // var deadline = new Date("Aug 5, 2021 00:00:00").getTime();
-    const deadline = new Date("jul 01, 2021 00:00:00");
+    const deadline = new Date("jul 31, 2021 00:00:00");
     initializeClock('waktunikah', deadline);
   </script>
   <!-- ucapan -->
@@ -555,7 +555,7 @@
 
       $.ajax({
         type: "get",
-        url: "https://api.novamedian.today",
+        url: "https://nikahan-kami.com/api",
         format: "JSON",
         crossDomain: true,
         dataType: "json",
@@ -584,7 +584,7 @@
           '</div></div><div class="guest-book-ucapan">' + pesan + '</div></div></div>';
         $.ajax({
           method: "POST",
-          url: "https://api.novamedian.today/send.php",
+          url: "https://nikahan-kami.com/api/send.php",
           data: {
             nama: nama,
             pesan: pesan,
